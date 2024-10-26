@@ -15,6 +15,8 @@
       `!important` y la cascada
       Cuando una regla utiliza `!important`, sobrescribe cualquier otra regla sin importar su especificidad, rompiendo la jerarquía de prioridades en la cascada de CSS. Sin embargo, si varias reglas `!important` están en conflicto, el navegador selecciona la que 
       tenga mayor especificidad.
+
+
 | Tipo de Selector                          | Ejemplo                   | Puntaje de Especificidad |
 |-------------------------------------------|---------------------------|--------------------------|
 | Estilos en línea (atributo `style`)       | `style="color: red;"`     | 1000                     |
@@ -27,6 +29,7 @@
 | Selector Universal                        | `*`                       | 0                        |
 | Combinadores                              | `>`, `+`, `~`             | 0                        |
 | `!important`                              | `color: red !important;`  | Sobrescribe especificidad |
+
 
 - Los selectores universales (`*`), combinadores (`+`, `>`, `~`) y las pseudoclases negadas (`:not()`) **no afectan la especificidad**.
 - El marcador `!important` sobrescribe otras reglas sin importar la especificidad.
