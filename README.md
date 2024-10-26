@@ -17,18 +17,18 @@
       tenga mayor especificidad.
 
 
-| Tipo de Selector                          | Ejemplo                   | Puntaje de Especificidad |
-|-------------------------------------------|---------------------------|--------------------------|
-| Estilos en línea (atributo `style`)       | `style="color: red;"`     | 1000                     |
-| Selector de ID                            | `#mi-id`                  | 100                      |
-| Selector de Clase                         | `.mi-clase`               | 10                       |
-| Selector de Atributo                      | `[type="text"]`           | 10                       |
-| Pseudoclase                               | `:hover`, `:first-child`  | 10                       |
-| Selector de Elemento                      | `p`, `div`, `span`        | 1                        |
-| Pseudoelemento                            | `::before`, `::after`     | 1                        |
-| Selector Universal                        | `*`                       | 0                        |
-| Combinadores                              | `>`, `+`, `~`             | 0                        |
-| `!important`                              | `color: red !important;`  | Sobrescribe especificidad |
+      | Tipo de Selector                          | Ejemplo                   | Puntaje de Especificidad |
+      |-------------------------------------------|---------------------------|--------------------------|
+      | Estilos en línea (atributo `style`)       | `style="color: red;"`     | 1000                     |
+      | Selector de ID                            | `#mi-id`                  | 100                      |
+      | Selector de Clase                         | `.mi-clase`               | 10                       |
+      | Selector de Atributo                      | `[type="text"]`           | 10                       |
+      | Pseudoclase                               | `:hover`, `:first-child`  | 10                       |
+      | Selector de Elemento                      | `p`, `div`, `span`        | 1                        |
+      | Pseudoelemento                            | `::before`, `::after`     | 1                        |
+      | Selector Universal                        | `*`                       | 0                        |
+      | Combinadores                              | `>`, `+`, `~`             | 0                        |
+      | `!important`                              | `color: red !important;`  | Sobrescribe especificidad |
 
 
 - Los selectores universales (`*`), combinadores (`+`, `>`, `~`) y las pseudoclases negadas (`:not()`) **no afectan la especificidad**.
