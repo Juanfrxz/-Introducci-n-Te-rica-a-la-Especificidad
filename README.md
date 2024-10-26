@@ -15,15 +15,18 @@
       `!important` y la cascada
       Cuando una regla utiliza `!important`, sobrescribe cualquier otra regla sin importar su especificidad, rompiendo la jerarquía de prioridades en la cascada de CSS. Sin embargo, si varias reglas `!important` están en conflicto, el navegador selecciona la que 
       tenga mayor especificidad.
-| Selector                           | Tipo                               | Especificidad                       |
-|------------------------------------|------------------------------------|-------------------------------------|
-| style="color: red;"                |Estilos en línea (atributo style)   | 1000                                |
-| #miID                              | ID                                 | 100                                 |
-| .miClase, :hover, [type]           | Clase/Atributo                     | 10                                  |
-| .mi-clase                          | Selector de Clase                  | 10                                  |
-| div, p, ::before                   | Elemento                           | 1                                   |
-| *, :not(.miClase), >               | Universal/Negado                   | 0                                   | 
-| color: red !important;             | !important                         | Sobrescribe cualquier especificidad |
+| Tipo de Selector                          | Ejemplo                   | Puntaje de Especificidad |
+|-------------------------------------------|---------------------------|--------------------------|
+| Estilos en línea (atributo `style`)       | `style="color: red;"`     | 1000                     |
+| Selector de ID                            | `#mi-id`                  | 100                      |
+| Selector de Clase                         | `.mi-clase`               | 10                       |
+| Selector de Atributo                      | `[type="text"]`           | 10                       |
+| Pseudoclase                               | `:hover`, `:first-child`  | 10                       |
+| Selector de Elemento                      | `p`, `div`, `span`        | 1                        |
+| Pseudoelemento                            | `::before`, `::after`     | 1                        |
+| Selector Universal                        | `*`                       | 0                        |
+| Combinadores                              | `>`, `+`, `~`             | 0                        |
+| `!important`                              | `color: red !important;`  | Sobrescribe especificidad |
 
 - Los selectores universales (`*`), combinadores (`+`, `>`, `~`) y las pseudoclases negadas (`:not()`) **no afectan la especificidad**.
 - El marcador `!important` sobrescribe otras reglas sin importar la especificidad.
