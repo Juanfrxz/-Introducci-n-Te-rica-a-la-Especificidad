@@ -34,15 +34,17 @@
 - Los selectores universales (`*`), combinadores (`+`, `>`, `~`) y las pseudoclases negadas (`:not()`) **no afectan la especificidad**.
 - El marcador `!important` sobrescribe otras reglas sin importar la especificidad.
 
-> **Importante:** [Descargar presentación]()
+> **Importante:** [Descargar presentación](https://github.com/user-attachments/files/17532713/Especificidad.CSS.y.HTML.pptx)
+
 
 # **Parte 2: Ejemplos Prácticos**
 
-![alt text]()
+![image](https://github.com/user-attachments/assets/343c5d4d-1d19-42f8-9847-d35313824b6c)
+
 
 El texto del párrafo `Hola Mundo` aparecerá en rojo porque el selector de ID `#parrafo` tiene una especificidad más alta (100 puntos), superando tanto el selector de clase como el de tipo.
 
-![alt text]()
+![image](https://github.com/user-attachments/assets/24b867a9-8ce9-47d2-bf14-9ee6516482e3)
 
 El texto "Hola Mundo" se mostrará en azul porque `!important` en el selector `p` hace que esa regla se aplique sobre cualquier otra.
 
@@ -53,13 +55,15 @@ grupos pequeños:
 
 Ejercicio 1: Calculando la Especificidad
 
-![alt text]()
+![alt text](https://github.com/user-attachments/assets/145fa109-dc5a-4f86-8fd8-49219c4d4b9d)
+
 
 El color del título `<h1>` será rojo, ya que el selector de ID `#main h1` tiene la mayor especificidad con 101 puntos, superando al selector de clase y al selector de tipo.
 
 Ejercicio 2: Resolviendo Conflictos de Especificidad
 
-![alt text]()
+![alt text](https://github.com/user-attachments/assets/57fdd73b-f1bb-4101-a287-b293528d6cfe)
+
 
 Explicación: Este nuevo selector `#box .text` tiene una especificidad de `100 (ID) + 10 (clase) = 110` puntos, lo que supera a las otras reglas y hace que el color del párrafo sea amarillo, sin necesidad de usar `!important`.
 
@@ -71,7 +75,8 @@ Dales a los participantes un archivo HTML con múltiples elementos y clases, y p
 agreguen estilos CSS para lograr un diseño específico. Deberán aplicar todo lo aprendido sobre
 especificidad para resolver los conflictos y obtener el resultado correcto.
 
-```<div class="header" id="top">
+```html
+<div class="header" id="top">
 <h1>Bienvenido</h1>
   <p id="intro">Este es el sitio web.</p>
 </div>
@@ -82,7 +87,8 @@ especificidad para resolver los conflictos y obtener el resultado correcto.
 <footer id="footer">
   <p>Pie de página</p>
 </footer>
+```
+![alt text](https://github.com/user-attachments/assets/a0e41c9e-a479-4bdb-866d-899b7f66b405)
 
-![alt text]()
 
 Esta estructura aprovecha la especificidad sin necesidad de `!important`, aplicando los estilos de forma precisa en los elementos requeridos.
