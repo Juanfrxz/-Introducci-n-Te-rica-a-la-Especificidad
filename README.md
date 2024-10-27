@@ -60,3 +60,29 @@ El color del título `<h1>` será rojo, ya que el selector de ID `#main h1` tien
 Ejercicio 2: Resolviendo Conflictos de Especificidad
 
 ![alt text]()
+
+Explicación: Este nuevo selector `#box .text` tiene una especificidad de `100 (ID) + 10 (clase) = 110` puntos, lo que supera a las otras reglas y hace que el color del párrafo sea amarillo, sin necesidad de usar `!important`.
+
+# **Parte 4: Desafío Final**
+
+Desafío: Diseñando una Página Completa con Estilos Conflictivos
+
+Dales a los participantes un archivo HTML con múltiples elementos y clases, y pídeles que
+agreguen estilos CSS para lograr un diseño específico. Deberán aplicar todo lo aprendido sobre
+especificidad para resolver los conflictos y obtener el resultado correcto.
+
+```<div class="header" id="top">
+<h1>Bienvenido</h1>
+  <p id="intro">Este es el sitio web.</p>
+</div>
+<div class="content">
+  <h2>Contenido principal</h2>
+  <p class="highlight">Texto destacado</p>
+</div>
+<footer id="footer">
+  <p>Pie de página</p>
+</footer>
+
+![alt text]()
+
+Esta estructura aprovecha la especificidad sin necesidad de `!important`, aplicando los estilos de forma precisa en los elementos requeridos.

@@ -1,0 +1,18 @@
+/* Color blanco para el h1 en .header */
+.header h1 {
+    color: white;
+}
+
+/* Color rojo para el p en .content */
+.content p {
+    color: red;
+}
+
+/* Color gris para el texto en footer */
+#footer p {
+    color: gray;
+}
+
+body {
+    background-color: grey;
+}
