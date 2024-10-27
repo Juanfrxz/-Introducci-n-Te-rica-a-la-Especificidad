@@ -88,7 +88,15 @@ especificidad para resolver los conflictos y obtener el resultado correcto.
   <p>Pie de página</p>
 </footer>
 ```
-![alt text](https://github.com/user-attachments/assets/a0e41c9e-a479-4bdb-866d-899b7f66b405)
+Desafío CSS:
+El <h1> en el .header debe ser de color blanco.
+El texto del <p> en .content debe ser rojo.
+El texto del <footer> debe ser gris.
 
+Pistas:
+Usar selectores combinados (clases y etiquetas).
+Resolver conflictos de estilo con la especificidad correcta.
+
+![alt text](https://github.com/user-attachments/assets/a0e41c9e-a479-4bdb-866d-899b7f66b405)
 
 Esta estructura aprovecha la especificidad sin necesidad de `!important`, aplicando los estilos de forma precisa en los elementos requeridos.
