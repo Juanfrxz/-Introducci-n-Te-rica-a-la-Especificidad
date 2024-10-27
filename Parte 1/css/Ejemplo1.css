@@ -1,0 +1,22 @@
+/* Selector de tipo */
+p {
+    color: lightblue; /* Este color será ignorado debido a !important en otras reglas */
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Selector de clase */
+.text {
+    color: green !important; /* La regla con !important prevalecerá */
+}
+
+/* Selector de ID */
+#intro {
+    color: red; /* Esta regla normalmente tiene más especificidad, pero será ignorada */
+}
+
+.example {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}

@@ -33,3 +33,5 @@
 
 - Los selectores universales (`*`), combinadores (`+`, `>`, `~`) y las pseudoclases negadas (`:not()`) **no afectan la especificidad**.
 - El marcador `!important` sobrescribe otras reglas sin importar la especificidad.
+
+> [Descargar presentación](https://vscode.dev/github/Juanfrxz/-Introducci-n-Te-rica-a-la-Especificidad/blob/main/Parte%201/Especificidad%20CSS%20y%20HTML.pptx)
