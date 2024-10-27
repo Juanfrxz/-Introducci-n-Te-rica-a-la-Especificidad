@@ -20,3 +20,23 @@ p {
     gap: 20px;
     justify-content: space-between;
 }
+
+p {
+    color: blue;
+}
+/* Selector de tipo (especificidad 1) */
+
+.text {
+    color: green;
+}
+/* Selector de clase (especificidad 10) */
+
+#content p {
+    color: red;
+}
+/* Selector de ID (especificidad 100) */
+
+p {
+    color: purple !important;
+}
+/* Selector con !important */
