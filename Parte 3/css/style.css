@@ -1,0 +1,14 @@
+/* Estilo por etiqueta */
+h1 {
+    color: blue;
+}
+
+/* Estilo por clase */
+.content h1 {
+    color: green;
+}
+
+/* Estilo por ID */
+#main h1 {
+    color: red;
+}

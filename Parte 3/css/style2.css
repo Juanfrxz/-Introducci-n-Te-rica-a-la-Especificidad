@@ -1,0 +1,11 @@
+cssCopiar código#box p {
+    color: blue;
+}
+
+.content .text {
+color: green;
+}
+
+#box .text {
+    color: yellow;
+}
